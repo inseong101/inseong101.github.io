@@ -36,3 +36,15 @@
   width: 100%; /* 메뉴 아이템 너비를 채우기 */
   text-align: center; /* 텍스트를 중앙 정렬 */
 }
+
+.content {
+  margin-left: 250px; /* 왼쪽 사이드바와 겹치지 않도록 여백 */
+  padding: 20px;
+  min-height: 100vh; /* 화면 전체 높이를 차지 */
+  display: flex; /* 정렬을 위해 Flexbox 사용 */
+  flex-direction: column;
+  justify-content: center; /* 세로 가운데 정렬 */
+  align-items: center; /* 가로 가운데 정렬 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  background-color: #fff; /* 흰색 배경 유지 */
+}
