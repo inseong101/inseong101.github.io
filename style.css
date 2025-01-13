@@ -11,6 +11,9 @@ body {
 
 .container {
   display: flex;
+  min-height: 100vh; /* 화면 전체 높이 */
+  max-height: 100vh; /* 화면 넘침 방지 */
+  overflow: hidden; /* 내부 콘텐츠가 넘칠 경우 숨김 */
 }
 
 /* 사이드바 스타일 */
