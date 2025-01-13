@@ -107,7 +107,28 @@ section:last-child::after {
   display: none;
 }
 
-#About { background-color: #ffffff; }
+/* About 섹션 스타일 */
+#About {
+   background-color: #ffffff;
+    padding: 50px 20px; /* 여백 추가 */
+    text-align: center; /* 내용 중앙 정렬 */
+}
+  
+#About h2 {
+  font-size: 24px; /* 자기소개 글자 크기 */
+  font-weight: normal; /* 일반 글씨체 */
+  margin-bottom: 20px; /* 자기소개와 아래 내용 사이 간격 */
+  color: #555; /* 중간 톤의 회색 */
+}
+
+#About a {font-size: 18px; /* 링크 글자 크기 */
+text-decoration: none; /* 링크의 밑줄 제거 */  
+color: inherit; /* 링크의 색상 제거 */
+}
+
+#About a:hover {
+  text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+}
 #Research-Interests { background-color: #e3e8f1; }
 #Education { background-color: #fefaf0; }
 #Honors-Awards { background-color: #e9f2f9; }
@@ -186,25 +207,4 @@ li {
     width: 80px;
     height: 80px;
   }
-/* About 섹션 스타일 */
-#About {
-    padding: 50px 20px; /* 여백 추가 */
-    text-align: center; /* 내용 중앙 정렬 */
-}
-  
-#About h2 {
-  font-size: 24px; /* 자기소개 글자 크기 */
-  font-weight: normal; /* 일반 글씨체 */
-  margin-bottom: 20px; /* 자기소개와 아래 내용 사이 간격 */
-  color: #555; /* 중간 톤의 회색 */
-}
-
-#About a {font-size: 18px; /* 링크 글자 크기 */
-text-decoration: none; /* 링크의 밑줄 제거 */  
-color: inherit; /* 링크의 색상 제거 */
-}
-
-#About a:hover {
-  text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
-}
 }
