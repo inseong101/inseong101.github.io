@@ -114,12 +114,12 @@ section p {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 30px;
   margin-top: 100px;
 }
 
 .social-icons a {
-  font-size: 40px; /* 아이콘 크기 */
+  font-size: 30px; /* 아이콘 크기 */
   color: #222;
   opacity: 1;
   transition: color 0.3s, opacity 0.3s;
