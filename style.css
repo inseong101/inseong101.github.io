@@ -1,10 +1,11 @@
 /* 기본 스타일 */
 
 #About h1 {
-  font-size: 48px; /* 자기소개 글자 크기 */
-  font-weight: normal; /* 일반 글씨체 */
+  font-size: 60px; /* 자기소개 글자 크기 */
+  font-weight: bold; /* 일반 글씨체 */
+  font-family: 'Cursive';
   margin-bottom: 48px; /* 자기소개와 아래 내용 사이 간격 */
-  color: #555; /* 중간 톤의 회색 */
+  color: #000D00; /* 까망 */
 }
 
 body {
