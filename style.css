@@ -171,7 +171,8 @@ p, ul, li {
 
 /* Section Styles */
 section {
-  height: 100vh; /* 각 섹션이 한 화면을 차지 */
+  min-height: 100vh; /* 각 섹션이 한 화면을 차지 */
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
