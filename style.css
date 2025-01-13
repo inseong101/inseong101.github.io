@@ -5,119 +5,14 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth; /* 부드러운 스크롤 */
+  scroll-behavior: smooth;
 }
 
-.container {
-  display: flex;
-  min-height: 100vh; /* 화면 전체 높이 */
-}
-
-/* 사이드바 스타일 */
-.sidebar {
-  background: #f7f7f7;
-  padding: 20px;
-  width: 250px;
-  min-height: 100vh;
-  z-index: 1000; /* 콘텐츠보다 위에 오도록 설정 */
-}
-
-.sidebar .profile-pic {
-  border-radius: 50%;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.menu a {
-  display: block;
-  margin: 10px 0;
-  text-decoration: none;
-  color: #0056b3;
-  font-weight: bold;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-}
-
-/* 메인 콘텐츠 스타일 */
-.content {
-  flex: 1;
-  padding: 20px;
-}
-
-.section {
-  margin-bottom: 40px;
-}
-
-/* 섹션 스타일 (전체 폭 채우기) */
-.section {
-  padding: 40px 20px;
-  margin: 0 -20px; /* 컨테이너 padding과 맞추어 배경 확장 */
-}
-
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #0056b3;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-}
-
-/* 리스트 아이템 스타일 */
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-/* Education 스타일 */
-.education-item {
-  margin-bottom: 20px;
-}
-
-.education-header {
-  font-size: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.education-school {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.education-details span {
-  display: block;
-  font-size: 14px;
-  color: #555;
-  text-align: right;
-  margin-left: 10px;
-}
-
-.education-degree {
-  font-size: 16px;
-  color: #666;
-  margin-left: 10px;
-}
-
-/* Honors, Works, Skills, Experiences */
-p, ul, li {
-  font-size: 16px;
-  color: #444;
-}
-
-/* Layout Styles */
+/* 레이아웃 스타일 */
 .container {
   display: flex;
 }
 
-/* Sidebar Styles */
 .sidebar {
   width: 250px;
   background-color: #555;
@@ -131,6 +26,14 @@ p, ul, li {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 사이드바 스타일 */
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -160,27 +63,18 @@ p, ul, li {
   background-color: #3e4a5b;
 }
 
-/* Content Styles */
-.content {
-  margin-left: 250px;
-  width: calc(100% - 250px); /* 화면에서 사이드바 크기 제외 */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Section Styles */
+/* 콘텐츠 섹션 스타일 */
 section {
-  height: 100vh; /* 각 섹션이 한 화면을 차지 */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 20px;
-  position: relative; /* 구분선을 위한 상대 위치 */
+  position: relative;
 }
 
-/* 구분선 */
 section::after {
   content: "";
   position: absolute;
@@ -195,7 +89,6 @@ section:last-child::after {
   display: none;
 }
 
-/* 배경색 (섹션 별로 다른 색상 지정 가능) */
 #About { background-color: #f9f9f9; }
 #Research-Interests { background-color: #e3e8f1; }
 #Education { background-color: #fefaf0; }
@@ -204,7 +97,6 @@ section:last-child::after {
 #Skills { background-color: #fcf7e4; }
 #Experiences { background-color: #f9f1f1; }
 
-/* 섹션 제목 스타일 */
 section h1, section h2 {
   margin-bottom: 10px;
   color: #2d3a4b;
@@ -216,6 +108,16 @@ section p {
   color: #555;
 }
 
+/* 리스트 스타일 */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* 소셜 아이콘 */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -224,18 +126,16 @@ section p {
 }
 
 .social-icons a {
-  font-size: 30px; /* 아이콘 크기 */
+  font-size: 30px;
   color: #222;
-  opacity: 1;
   transition: color 0.3s, opacity 0.3s;
 }
 
 .social-icons a:hover {
-  color: #007bff; /* 호버 시 색상 변경 */
-  opacity: 1;
+  color: #007bff;
 }
 
-/* Responsive Design */
+/* 반응형 디자인 */
 @media (max-width: 768px) {
   .sidebar {
     width: 200px;
@@ -244,10 +144,6 @@ section p {
   .content {
     margin-left: 200px;
     width: calc(100% - 200px);
-  }
-
-  .menu a {
-    font-size: 0.9rem;
   }
 }
 
@@ -268,7 +164,4 @@ section p {
     width: 80px;
     height: 80px;
   }
-
-  
-  
 }
