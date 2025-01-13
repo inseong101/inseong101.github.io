@@ -1,4 +1,10 @@
 /* 공통 스타일: 모든 요소의 기본값 초기화 및 설정 */
+html, body {
+  margin: 0;      /* 모든 기본 여백 제거 */
+  padding: 0;     /* 모든 기본 패딩 제거 */
+  width: 100%;    /* 브라우저 너비 전체 사용 */
+  height: 100%;   /* 브라우저 높이 전체 사용 */
+}
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
