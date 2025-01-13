@@ -166,4 +166,21 @@ section p {
     width: 80px;
     height: 80px;
   }
+h1 {
+  font-size: 48px; /* 글자 크기 */
+  font-weight: bold; /* 굵게 */
+  color: #333; /* 텍스트 색상 */
+  text-align: center; /* 중앙 정렬 */
+  text-transform: uppercase; /* 대문자 변환 */
+  letter-spacing: 2px; /* 글자 간격 */
+  margin-bottom: 20px; /* 아래 여백 */
+}
+
+h1 span.highlight {
+  color: #007bff; /* 강조 색상 (파란색) */
+  font-style: italic; /* 이탤릭체 */
+}
+
+  
+  
 }
