@@ -186,13 +186,13 @@ li {
 
 /* 네온 효과 텍스트 */
 .neon {
-    font-size: 60px;
-    font-weight: 700;
-    color: #0ff; /* 밝은 청록색 */
+    font-size: 60px !important;
+    font-weight: 700 !important;
+    color: #0ff !important;
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 
                  0 0 20px rgba(0, 255, 255, 0.7), 
-                 0 0 30px rgba(0, 255, 255, 0.7);
-    animation: neon-flicker 1s infinite alternate;
+                 0 0 30px rgba(0, 255, 255, 0.7) !important;
+    animation: neon-flicker 1s infinite alternate !important;
 }
 
 /* 네온 애니메이션 */
@@ -210,8 +210,7 @@ li {
 }
 
 #About 
-  h2 {
-  font-size: 24px; /* 자기소개 글자 크기 */
+  h2 {font-size: 24px; /* 자기소개 글자 크기 */
   font-weight: normal; /* 일반 글씨체 */
   margin-bottom: 20px; /* 자기소개와 아래 내용 사이 간격 */
   color: #555; /* 중간 톤의 회색 */
