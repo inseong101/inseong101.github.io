@@ -91,13 +91,13 @@ section:last-child::after {
 }
 
 /* 배경색 (섹션 별로 다른 색상 지정 가능) */
-#about { background-color: #f9f9f9; }
-#research-interests { background-color: #e3e8f1; }
-#education { background-color: #fefaf0; }
-#honors-awards { background-color: #e9f2f9; }
+#About { background-color: #f9f9f9; }
+#Research-interests { background-color: #e3e8f1; }
+#Education { background-color: #fefaf0; }
+#Honors-awards { background-color: #e9f2f9; }
 #Works { background-color: #ebf8f2; }
-#skills { background-color: #fcf7e4; }
-#experiences { background-color: #f9f1f1; }
+#Skills { background-color: #fcf7e4; }
+#Experiences { background-color: #f9f1f1; }
 
 /* 섹션 제목 스타일 */
 section h1, section h2 {
