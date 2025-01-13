@@ -74,6 +74,7 @@ li {
 }
 
 .education-header {
+  font-size: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +90,7 @@ li {
   font-size: 14px;
   color: #555;
   text-align: right;
+  margin-left: 10px;
 }
 
 .education-degree {
