@@ -23,7 +23,6 @@ body {
   width: 250px;
   min-height: 100vh;
   max-height: 100vh;
-  overflow-y: auto; /* 사이드바 내용이 많을 경우 스크롤 가능 */
   z-index: 1000; /* 콘텐츠보다 위에 오도록 설정 */
 }
 
