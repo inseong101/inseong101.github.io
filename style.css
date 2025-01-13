@@ -74,6 +74,20 @@ ul li {
   margin-bottom: 10px;
 }
 
+/* 리스트 스타일 수정 */
+ul {
+  list-style-position: inside; /* 불릿을 텍스트 안쪽으로 */
+  text-align: left; /* 텍스트를 왼쪽 정렬 */
+  padding: 0; /* 기본 여백 제거 */
+  margin: 0 auto; /* 리스트 자체를 가운데 정렬 */
+  max-width: 600px; /* 리스트의 최대 너비 설정 */
+}
+
+li {
+  margin-bottom: 10px; /* 항목 간 여백 추가 */
+  line-height: 1.6; /* 가독성을 위해 줄 간격 조정 */
+}
+
 /* 소셜 아이콘 스타일 */
 .social-icons {
   display: flex;
