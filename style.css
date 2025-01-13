@@ -23,7 +23,7 @@ html, body {
 
 .sidebar {
   width: 250px;
-  background-color: #555;
+  background-color: #ffffff;
   color: white;
   padding: 20px;
   position: fixed;
@@ -98,13 +98,13 @@ section:last-child::after {
   display: none;
 }
 
-#About { background-color: #f9f9f9; }
+#About { background-color: #ffffff; }
 #Research-Interests { background-color: #e3e8f1; }
 #Education { background-color: #fefaf0; }
 #Honors-Awards { background-color: #e9f2f9; }
 #Works { background-color: #ebf8f2; }
 #Skills { background-color: #fcf7e4; }
-#Experiences { background-color: #f9f1f1; }
+#Experiences { background-color: #ffffff; }
 
 section h1, section h2 {
   margin-bottom: 10px;
