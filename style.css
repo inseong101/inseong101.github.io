@@ -120,12 +120,14 @@ section p {
 
 .social-icons a {
   font-size: 24px; /* 아이콘 크기 */
-  color: #555;
-  transition: color 0.3s;
+  color: #333;
+  opacity: 1;
+  transition: color 0.3s, opacity 0.3s;
 }
 
 .social-icons a:hover {
   color: #007bff; /* 호버 시 색상 변경 */
+  opacity: 1;
 }
 
 
