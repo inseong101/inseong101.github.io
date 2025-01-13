@@ -179,7 +179,6 @@ li {
   }
 /* About 섹션 스타일 */
 #About {
-    background-color: #000; /* 검정 배경 */
     padding: 50px 20px; /* 여백 추가 */
     text-align: center; /* 내용 중앙 정렬 */
 }
