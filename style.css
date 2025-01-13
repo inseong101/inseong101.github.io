@@ -184,9 +184,9 @@ li {
 }
 
 #About h1 {
-  font-size: 48px; /* 자기소개 글자 크기 */
+  font-size: 48px !important; /* 자기소개 글자 크기 */
   font-weight: normal; /* 일반 글씨체 */
-  margin-bottom: 48px; /* 자기소개와 아래 내용 사이 간격 */
+  margin-bottom: 48px !important; /* 자기소개와 아래 내용 사이 간격 */
   color: #555; /* 중간 톤의 회색 */
 }
   
