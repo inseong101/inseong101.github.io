@@ -200,8 +200,8 @@ li {
 }
 
 #About a {font-size: 18px; /* 링크 글자 크기 */
-  color: #b35900; /* 강조된 색상 */
-  text-decoration: none; /* 밑줄 제거 */
+text-decoration: none; /* 링크의 밑줄 제거 */  
+color: inherit; /* 링크의 색상 제거 */
 }
 
 #About a:hover {
