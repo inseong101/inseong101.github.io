@@ -184,41 +184,19 @@ li {
     text-align: center; /* 내용 중앙 정렬 */
 }
 
-/* 네온 효과 텍스트 */
-.neon {
-    font-size: 60px !important;
-    font-weight: 700 !important;
-    color: #0ff !important;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 
-                 0 0 20px rgba(0, 255, 255, 0.7), 
-                 0 0 30px rgba(0, 255, 255, 0.7) !important;
-    animation: neon-flicker 1s infinite alternate !important;
+#About h1 {font-size: 48px; /* 자기소개 글자 크기 */
+  font-weight: normal; /* 일반 글씨체 */
+  margin-bottom: 48px; /* 자기소개와 아래 내용 사이 간격 */
+  color: #555; /* 중간 톤의 회색 */
 }
-
-/* 네온 애니메이션 */
-@keyframes neon-flicker {
-    0% {
-        text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 
-                     0 0 20px rgba(0, 255, 255, 0.7), 
-                     0 0 30px rgba(0, 255, 255, 0.7);
-    }
-    100% {
-        text-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 
-                     0 0 30px rgba(0, 255, 255, 0.7), 
-                     0 0 40px rgba(0, 255, 255, 0.7);
-    }
-}
-
-#About 
-  h2 {font-size: 24px; /* 자기소개 글자 크기 */
+  
+#About h2 {font-size: 24px; /* 자기소개 글자 크기 */
   font-weight: normal; /* 일반 글씨체 */
   margin-bottom: 20px; /* 자기소개와 아래 내용 사이 간격 */
   color: #555; /* 중간 톤의 회색 */
 }
 
-#About 
-  a {
-  font-size: 18px; /* 링크 글자 크기 */
+#About a {font-size: 18px; /* 링크 글자 크기 */
   color: #b35900; /* 강조된 색상 */
   text-decoration: none; /* 밑줄 제거 */
 }
