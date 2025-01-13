@@ -3,7 +3,7 @@
 #About h1 {
   font-size: 60px; /* 자기소개 글자 크기 */
   font-weight: bold; /* 일반 글씨체 */
-  font-family: 'Cursive';
+  font-family: 'Chelsea Market', cursive;
   margin-bottom: 48px; /* 자기소개와 아래 내용 사이 간격 */
   color: #000D00; /* 까망 */
 }
