@@ -183,13 +183,13 @@ li {
   padding: 50px 20px; /* 위아래 여백 추가 */
   text-align: center; /* 가운데 정렬 */
 }
-.neon { 
+#About .neon {
     font-size: 60px; 
     font-weight: 700; 
     color: #fff; 
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.7); 
     animation: neon-flicker 1s infinite alternate;
-} 
+
 @keyframes neon-flicker {
     0% {
         text-shadow: 
@@ -204,6 +204,7 @@ li {
         0 0 40px rgba(0, 255, 255, 0.7);
     }
 } 
+}
 #About 
   h1 {
   font-size: 88px; /* 큰 글자 크기 */
