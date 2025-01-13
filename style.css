@@ -1,12 +1,4 @@
 /* 기본 스타일 */
-   /* 하기 전에 대문 강조 */   
-#About h1 {
-  font-size: 60px; /* 자기소개 글자 크기 */
-  font-weight: normal; /* 일반 글씨체 */
-  font-family: 'Chelsea Market', cursive;
-  margin-bottom: 60px; /* 자기소개와 아래 내용 사이 간격 */
-  color: #000D00; /* 까망 */
-}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -113,7 +105,13 @@ section:last-child::after {
     padding: 50px 20px; /* 여백 추가 */
     text-align: center; /* 내용 중앙 정렬 */
 }
-  
+#About h1 {
+  font-size: 60px; /* 자기소개 글자 크기 */
+  font-weight: normal; /* 일반 글씨체 */
+  font-family: 'Chelsea Market', cursive;
+  margin-bottom: 60px; /* 자기소개와 아래 내용 사이 간격 */
+  color: #000D00; /* 까망 */
+}
 #About h2 {
   font-size: 24px; /* 자기소개 글자 크기 */
   font-weight: normal; /* 일반 글씨체 */
