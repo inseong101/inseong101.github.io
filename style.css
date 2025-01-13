@@ -120,10 +120,14 @@ section p {
 /* 리스트 스타일 */
 ul {
   padding-left: 20px;
+  text-align: left; /* 텍스트를 왼쪽 정렬 */
+  padding-left: 20px; /* 텍스트와 bullet point 간격 조정 */
 }
 
 li {
   margin-bottom: 10px;
+  list-style-position: outside; /* bullet point를 텍스트 밖에 위치 */
+  margin-left: 0; /* 불필요한 여백 제거 */
 }
 
 /* 소셜 아이콘 */
