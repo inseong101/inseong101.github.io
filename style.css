@@ -8,9 +8,17 @@ body {
   scroll-behavior: smooth;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
 /* 레이아웃 스타일 */
 .container {
   display: flex;
+  min-height: 100vh;
+  width: 100%; /* 부모 요소와 너비 맞추기 */
 }
 
 .sidebar {
@@ -27,9 +35,10 @@ body {
 }
 
 .content {
-  margin-left: 250px;
   width: calc(100% - 250px);
+  flex: 1; /* 남은 공간 채우기 */
   display: flex;
+  margin-left: 250px; /* 사이드바 너비만큼 여백 */
   flex-direction: column;
 }
 
