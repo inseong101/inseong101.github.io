@@ -177,4 +177,34 @@ li {
     width: 80px;
     height: 80px;
   }
+  /* About 섹션 스타일 */
+#About {
+  background-color: #fff; /* 배경색 하얀색 */
+  padding: 50px 20px; /* 위아래 여백 추가 */
+  text-align: center; /* 가운데 정렬 */
+}
+
+#About h1 {
+  font-size: 48px; /* 큰 글자 크기 */
+  font-weight: bold; /* 굵은 글씨 */
+  margin-bottom: 10px; /* 이름과 자기소개 사이 간격 */
+  color: #2d3a4b; /* 어두운 색상 */
+}
+
+#About h2 {
+  font-size: 24px; /* 자기소개 글자 크기 */
+  font-weight: normal; /* 일반 글씨체 */
+  margin-bottom: 20px; /* 자기소개와 아래 내용 사이 간격 */
+  color: #555; /* 중간 톤의 회색 */
+}
+
+#About a {
+  font-size: 18px; /* 링크 글자 크기 */
+  color: #b35900; /* 강조된 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+#About a:hover {
+  text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+}
 }
