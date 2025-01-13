@@ -1,34 +1,44 @@
-/* Sidebar Styles */
+/* Global Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* 부드러운 스크롤 */
+  font-family: 'Roboto', sans-serif; /* 전역 폰트 설정 */
+}
 
+/* Layout Styles */
+.container {
+  display: flex;
+}
+
+/* Sidebar Styles */
 .sidebar {
   width: 250px;
   background-color: #2d3a4b;
   color: white;
   padding: 20px;
   position: fixed;
-  height: 100vh; /* 화면 전체 높이에 맞춤 */
-  overflow: hidden; /* 스크롤바를 제거 */
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* 자식 요소를 가운데 정렬 */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 자연스러운 분리감을 주는 그림자 */
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .profile-pic {
-  width: 120px; /* 프로필 사진 크기 확대 */
+  width: 120px;
   height: 120px;
   border-radius: 50%;
   margin-bottom: 20px;
   object-fit: cover;
-  border: 3px solid white; /* 테두리 추가 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 메뉴 아이템 가운데 정렬 */
   width: 100%;
+  text-align: center;
 }
 
 .menu a {
@@ -36,146 +46,120 @@
   color: white;
   text-decoration: none;
   margin: 10px 0;
-  padding: 12px 20px; /* 버튼 크기 조정 */
-  border-radius: 8px; /* 둥근 모서리 */
-  width: 100%; /* 너비를 100%로 */
-  text-align: center; /* 텍스트 중앙 정렬 */
-  font-size: 1rem; /* 글씨 크기 조정 */
-  transition: background-color 0.3s ease; /* 부드러운 호버 효과 */
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
 .menu a:hover {
-  background-color: #3e4a5b; /* 호버 시 약간 밝은 색상 */
-  color: #f0f0f0; /* 글씨 색 밝게 */
+  background-color: #3e4a5b;
 }
 
 /* Content Styles */
 .content {
-  margin-left: 250px; /* 사이드바와 겹치지 않도록 여백 */
-  padding: 20px;
-  min-height: 100vh; /* 화면 전체 높이 */
-  display: flex; /* Flexbox 사용 */
+  margin-left: 250px;
+  width: calc(100% - 250px); /* 화면에서 사이드바 크기 제외 */
+  display: flex;
   flex-direction: column;
-  justify-content: center; /* 세로 중앙 정렬 */
-  align-items: center; /* 가로 중앙 정렬 */
-  text-align: center; /* 텍스트 중앙 정렬 */
-  background-color: #f9f9f9; /* 밝은 배경색 */
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* 안쪽 그림자 추가 */
 }
 
-.content h1, .content h2 {
-  font-family: 'Roboto', sans-serif; /* 폰트 적용 */
-  color: #2d3a4b; /* 텍스트 색상 */
+/* Section Styles */
+section {
+  height: 100vh; /* 각 섹션이 한 화면을 차지 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* 구분선을 위한 상대 위치 */
 }
 
-.content p {
-  line-height: 1.6; /* 텍스트 줄 간격 */
-  color: #555; /* 회색 톤 텍스트 */
+/* 구분선 */
+section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+section:last-child::after {
+  display: none;
+}
+
+/* 배경색 (섹션 별로 다른 색상 지정 가능) */
+#about { background-color: #f9f9f9; }
+#research-interests { background-color: #e3e8f1; }
+#education { background-color: #fefaf0; }
+#honors-awards { background-color: #e9f2f9; }
+#Works { background-color: #ebf8f2; }
+#skills { background-color: #fcf7e4; }
+#experiences { background-color: #f9f1f1; }
+
+/* 섹션 제목 스타일 */
+section h1, section h2 {
+  margin-bottom: 10px;
+  color: #2d3a4b;
+}
+
+section p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
 }
 
 /* Social Icons */
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px; /* 아이콘 간격 */
+  gap: 15px;
   margin-top: 10px;
 }
 
 .social-icons a {
   color: white;
-  font-size: 1.5rem; /* 아이콘 크기 */
-  transition: color 0.3s ease; /* 부드러운 효과 */
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #1db954; /* 호버 시 초록색 */
+  color: #1db954;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .sidebar {
-    width: 200px; /* 작은 화면에서 사이드바 크기 줄임 */
+    width: 200px;
   }
 
   .content {
-    margin-left: 200px; /* 여백 크기 조정 */
+    margin-left: 200px;
+    width: calc(100% - 200px);
   }
 
   .menu a {
-    font-size: 0.9rem; /* 작은 화면에서 글씨 크기 축소 */
-    padding: 10px 15px;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .sidebar {
-    position: absolute;
-    width: 100%; /* 전체 너비로 확장 */
+    width: 100%;
     height: auto;
+    position: static;
     padding: 10px;
   }
 
   .content {
-    margin-left: 0; /* 사이드바와 겹치지 않음 */
-    padding: 15px;
-    justify-content: center; /* 세로 중앙 정렬 유지 */
-    align-items: center; /* 가로 중앙 정렬 유지 */
+    margin-left: 0;
+    width: 100%;
   }
 
   .profile-pic {
     width: 80px;
     height: 80px;
   }
-
-  /* 공통 섹션 스타일 */
-section {
-  height: 100vh; /* 각 섹션이 한 화면을 차지 */
-  display: flex; /* 컨텐츠 정렬을 위한 Flexbox */
-  flex-direction: column; /* 수직 정렬 */
-  justify-content: center; /* 세로 가운데 정렬 */
-  align-items: center; /* 가로 가운데 정렬 */
-  text-align: center; /* 텍스트 가운데 정렬 */
-  padding: 20px; /* 내부 여백 */
-  box-sizing: border-box; /* 패딩 포함 크기 조정 */
-  position: relative; /* 구분선 위치를 위해 상대적 위치 설정 */
 }
-
-/* 섹션 간 구분선 */
-section::after {
-  content: ""; /* 구분선을 표현할 빈 콘텐츠 */
-  position: absolute;
-  bottom: 0; /* 섹션의 아래쪽에 위치 */
-  left: 0;
-  width: 100%; /* 섹션 너비만큼 구분선 적용 */
-  height: 1px; /* 구분선 두께 */
-  background-color: #ccc; /* 구분선 색상 */
-}
-
-/* 마지막 섹션의 구분선 제거 */
-section:last-child::after {
-  display: none; /* 마지막 섹션의 구분선을 숨김 */
-}
-
-/* 배경색 구분 (각 섹션마다 다른 색상 설정 가능) */
-#about { background-color: #f9f9f9; }
-#research-interests { background-color: #e3e8f1; }
-#education { background-color: #fefaf0; }
-#publications { background-color: #f2f8e1; }
-#presentations { background-color: #f8ece0; }
-#honors-awards { background-color: #e9f2f9; }
-#attended-schools { background-color: #f7e8e8; }
-#personal-projects { background-color: #ebf8f2; }
-#skills { background-color: #fcf7e4; }
-#services { background-color: #eef7f9; }
-#experiences { background-color: #f9f1f1; }
-
-html {
-  scroll-behavior: smooth;
-}
-  
-}
-
-
-
-
-
