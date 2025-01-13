@@ -115,7 +115,7 @@ section:last-child::after {
 #About h2 {
   font-size: 24px; /* 자기소개 글자 크기 */
   font-weight: normal; /* 일반 글씨체 */
-  margin-bottom: 20px; /* 자기소개와 아래 내용 사이 간격 */
+  margin-bottom: 10px; /* 자기소개와 아래 내용 사이 간격 */
   color: #555; /* 중간 톤의 회색 */
 }
 
