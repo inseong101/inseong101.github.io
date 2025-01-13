@@ -1,87 +1,120 @@
-/* 공통 스타일: 모든 요소의 기본값 초기화 및 설정 */
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth; /* 부드러운 스크롤 효과 */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSEONG LEE</title>
+  
+  <!-- 외부 스타일시트 연결 -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- 아이콘 및 폰트 로드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- 사이드바 -->
+    <aside class="sidebar">
+      <!-- 프로필 이미지 -->
+      <img src="IMG_1038.jpeg" alt="Profile Picture" class="profile-pic">
+      
+      <!-- 네비게이션 메뉴 -->
+      <nav class="menu">
+        <a href="#About">About</a>
+        <a href="#Research-Interests">Research Interests</a>
+        <a href="#Education">Education</a>
+        <a href="#Honors-Awards">Honors & Awards</a>
+        <a href="#Works">Works</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Experiences">Experiences</a>
+      </nav>
+    </aside>
 
-/* 전체 컨테이너 스타일 */
-.container {
-  display: flex;
-  min-height: 100vh; /* 화면 전체 높이 */
-}
+    <!-- 메인 콘텐츠 -->
+    <main class="content">
+      <!-- About Section -->
+      <section id="About">
+        <h1>INSEONG LEE</h1>
+        <p class="subtitle">DKM · Department of Korean Medicine, Pusan University</p>
+        <p class="email"><a href="mailto:inseong101@naver.com">inseong101@naver.com</a></p>
+        <p><a href="curriculum_vitae.pdf" class="cv-link" target="_blank">Curriculum Vitae</a></p>
+        
+        <!-- 소셜 아이콘 -->
+        <div class="social-icons">
+          <a href="https://scholar.google.com/citations?view_op=list_works&hl=ko&user=GeOAGbwAAAAJ" target="_blank">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+          <a href="https://orcid.org/0000-0001-7445-3983" target="_blank">
+            <i class="fab fa-orcid"></i>
+          </a>
+          <a href="https://www.instagram.com/inseong0101/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://blog.naver.com/pnu_kmed" target="_blank">
+            <i class="fas fa-blog"></i>
+          </a>
+        </div>
+      </section>
 
-/* 사이드바 스타일 */
-.sidebar {
-  width: 250px;
-  background: #f7f7f7;
-  padding: 20px;
-  position: fixed; /* 스크롤 시 고정 */
-  height: 100vh;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
+      <!-- Research Interests Section -->
+      <section id="Research-Interests">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Text Mining</li>
+          <li>Korean Medicine Education</li>
+          <li>Economic Evaluation of Healthcare Programmes</li>
+        </ul>
+      </section>
 
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  object-fit: cover;
-  border: 3px solid white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+      <!-- Education Section -->
+      <section id="Education">
+        <h2>Education</h2>
+        <div class="education-item">
+          <h3>Professional Graduate Schools, Pusan National University</h3>
+          <p>Master of Science in Korean Medicine</p>
+          <p><strong>Dates:</strong> Mar. 2023 - Present</p>
+          <p><strong>Supervisor:</strong> Prof. Kim</p>
+        </div>
+        <div class="education-item">
+          <h3>Sungkyunkwan University</h3>
+          <p>Bachelor of Science in Physics</p>
+          <p><strong>Dates:</strong> Mar. 2017 - Feb. 2023</p>
+        </div>
+      </section>
 
-.menu {
-  text-align: center;
-}
+      <!-- Honors & Awards Section -->
+      <section id="Honors-Awards">
+        <h2>Honors & Awards</h2>
+        <ul>
+          <li>SKKU Summa Cum Laude, Sungkyunkwan University, 2023</li>
+          <li>Dean’s Scholarship, Pusan National University, 2024</li>
+        </ul>
+      </section>
 
-.menu a {
-  display: block;
-  color: #0056b3;
-  text-decoration: none;
-  margin: 10px 0;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
+      <!-- Works Section -->
+      <section id="Works">
+        <h2>Works</h2>
+        <p>Developing a web platform for clinical case studies.</p>
+      </section>
 
-.menu a:hover {
-  background-color: #e3e8f1;
-  padding: 8px;
-  border-radius: 8px;
-}
+      <!-- Skills Section -->
+      <section id="Skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Data Analysis with R and Python</li>
+          <li>Clinical Case Study Design</li>
+          <li>Scientific Writing</li>
+        </ul>
+      </section>
 
-/* 메인 콘텐츠 스타일 */
-.content {
-  margin-left: 250px; /* 사이드바를 제외한 나머지 */
-  flex: 1;
-  overflow-y: auto; /* 스크롤 가능 */
-}
-
-section {
-  padding: 40px 20px;
-  position: relative;
-  min-height: 100vh; /* 화면 전체 높이 */
-}
-
-/* 섹션 별 배경색 */
-#About { background-color: #f9f9f9; }
-#Research-Interests { background-color: #e3e8f1; }
-#Education { background-color: #fefaf0; }
-#Honors-Awards { background-color: #e9f2f9; }
-#Works { background-color: #ebf8f2; }
-#Skills { background-color: #fcf7e4; }
-#Experiences { background-color: #f9f1f1; }
-
-section h1, section h2 {
-  margin-bottom: 10px;
-  color: #2d3a4b;
-}
-
-section p, ul, li {
-  font-size: 16px;
-  color: #444;
-}
+      <!-- Experiences Section -->
+      <section id="Experiences">
+        <h2>Experiences</h2>
+        <p>Assistant Researcher, Korean Medicine Clinical Research Center, 2019 - Present</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
