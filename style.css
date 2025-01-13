@@ -126,6 +126,53 @@
     width: 80px;
     height: 80px;
   }
+
+  /* 공통 섹션 스타일 */
+section {
+  height: 100vh; /* 각 섹션이 한 화면을 차지 */
+  display: flex; /* 컨텐츠 정렬을 위한 Flexbox */
+  flex-direction: column; /* 수직 정렬 */
+  justify-content: center; /* 세로 가운데 정렬 */
+  align-items: center; /* 가로 가운데 정렬 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  padding: 20px; /* 내부 여백 */
+  box-sizing: border-box; /* 패딩 포함 크기 조정 */
+  position: relative; /* 구분선 위치를 위해 상대적 위치 설정 */
+}
+
+/* 섹션 간 구분선 */
+section::after {
+  content: ""; /* 구분선을 표현할 빈 콘텐츠 */
+  position: absolute;
+  bottom: 0; /* 섹션의 아래쪽에 위치 */
+  left: 0;
+  width: 100%; /* 섹션 너비만큼 구분선 적용 */
+  height: 1px; /* 구분선 두께 */
+  background-color: #ccc; /* 구분선 색상 */
+}
+
+/* 마지막 섹션의 구분선 제거 */
+section:last-child::after {
+  display: none; /* 마지막 섹션의 구분선을 숨김 */
+}
+
+/* 배경색 구분 (각 섹션마다 다른 색상 설정 가능) */
+#about { background-color: #f9f9f9; }
+#research-interests { background-color: #e3e8f1; }
+#education { background-color: #fefaf0; }
+#publications { background-color: #f2f8e1; }
+#presentations { background-color: #f8ece0; }
+#honors-awards { background-color: #e9f2f9; }
+#attended-schools { background-color: #f7e8e8; }
+#personal-projects { background-color: #ebf8f2; }
+#skills { background-color: #fcf7e4; }
+#services { background-color: #eef7f9; }
+#experiences { background-color: #f9f1f1; }
+
+html {
+  scroll-behavior: smooth;
+}
+  
 }
 
 
