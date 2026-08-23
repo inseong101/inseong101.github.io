@@ -1,0 +1,30 @@
+name: Update Google Scholar publications
+
+on:
+  schedule:
+    - cron: "17 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Fetch publications from Google Scholar
+        run: python scripts/update_scholar.py
+      - name: Commit updated publication data
+        run: |
+          if git diff --quiet -- publications.json; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add publications.json
+          git commit -m "Update publications from Google Scholar"
+          git push
