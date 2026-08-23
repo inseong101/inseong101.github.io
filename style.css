@@ -132,7 +132,6 @@ color: inherit; /* 링크의 색상 제거 */
 #Honors-Awards { background-color: #e9f2f9; }
 #Works { background-color: #ebf8f2; }
 #Skills { background-color: #fcf7e4; }
-#Experiences { background-color: #ffffff; }
 
 section h1, section h2 {
   margin-bottom: 10px;
@@ -143,6 +142,42 @@ section p {
   margin: 0;
   line-height: 1.6;
   color: #555;
+}
+
+#Works {
+  height: auto;
+  min-height: 100vh;
+}
+
+#works-list {
+  width: min(760px, 90%);
+  text-align: left;
+}
+
+.work-item {
+  margin: 18px 0;
+}
+
+.work-item a {
+  color: #245b46;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.work-item a:hover,
+.scholar-source:hover {
+  text-decoration: underline;
+}
+
+.work-meta {
+  display: block;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.scholar-source {
+  color: #245b46;
+  margin-top: 18px;
 }
 
 /* 리스트 스타일 */
